@@ -1,0 +1,83 @@
+/* BusSeats.css */
+
+.busseats-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f9fff9; /* light green tint background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Bus Details */
+.bus-details {
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c8e6c9;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.bus-details h2 {
+  color: #1b5e20; /* dark green */
+  margin-bottom: 12px;
+}
+
+.bus-details p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Seat Title */
+.seat-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2e7d32; /* deep green */
+  margin-bottom: 20px;
+}
+
+/* Seat Grid */
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Seat Button Styles */
+.seat-btn {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+/* Available Seat */
+.seat-btn.available {
+  background-color: #66bb6a; /* medium green */
+  color: #fff;
+}
+
+.seat-btn.available:hover {
+  background-color: #388e3c; /* darker hover */
+  transform: scale(1.05);
+}
+
+/* Booked Seat */
+.seat-btn.booked {
+  background-color: #d32f2f; /* red for booked */
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Disabled state for booked seat */
+.seat-btn.booked:disabled {
+  pointer-events: none;
+}
