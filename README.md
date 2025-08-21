@@ -10,7 +10,7 @@ TripMate is a full-stack bus ticket booking application built with **Django** (b
 - **Frontend:** React, React Router, Axios
 - **Database:** SQLite (default for development, can be replaced with PostgreSQL)
 - **Styling:** CSS
-- **Environment Variables:** `.env` (backend) & `.env.local` (frontend)
+- **Environment Variables:** `.env` (backend) & `.env` (frontend)
 
 ---
 
